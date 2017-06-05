@@ -1,0 +1,377 @@
+/* Global CSS */
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+    height: 155px; /* .push must be the same height as .footer */
+}
+#div1 {
+	display: none !important;
+}
+.iframe-box { position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;}.iframe-box iframe{ position: absolute; top: 0; left: 0; width: 100%; height: 100%;}/*.iframe-box iframe {	width: 100%;	zoom: 150%;}*/
+#scrollButton {
+	display: none !important;
+}
+body {
+    opacity: 0;
+    font-family: 'Muli', sans-serif !important;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+  div.vcenter h3 {
+    margin-top: 5% !important;
+  }
+
+  div.vcenter {
+    padding-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .center-rgac-landscape-img {
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+  }
+}
+
+.col-xs-12 {
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+
+.hp_cont {
+  margin-left: 25% !important;
+  margin-right: 25% !important;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+.nav-title {
+  position: fixed !important;
+}
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.full-img {
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.center-rgac {
+  margin-top: 3%;
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-bottom: 3%;
+}
+
+@media screen and (min-width: 500px) {
+  .center-rgac-landscape-img {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+.main_nav_rgac {
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+.menu-primary-menu li a {
+  font-size: 2.5em;
+}
+
+.sub-menu li a {
+  font-size: 2em;
+  font-style: italic;
+}
+/* Bootstrap Override CSS */
+
+.navbar-fixed-top {
+    padding-top: 25px;
+    width: 99%;
+}
+
+ul.navbar-nav li a:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: black !important;
+}
+
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('images/page-loader.gif') 50% 50% no-repeat rgb(249,249,249);
+}
+
+.navbar-header {
+    padding-right: 15%;
+}
+
+.er {
+    margin-top: -10px;
+}
+
+h1 {
+  letter-spacing: 3px !important;
+}
+
+h2 {
+  color: gray;
+}
+
+h3 {
+  font-family: 'EB Garamond', serif !important;
+  font-size: 1.95em !important;
+}
+
+@media screen and (max-width: 500px) {
+  .center-rgac-single-post {
+      margin-left: 10%;
+      margin-right: 10%;
+  }
+}
+
+.center-rgac-single-post {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+footer p {
+  color: gray;
+  font-size: 1em;
+}
+
+.postImage img {
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+.postImage:hover img {
+  opacity:0.5;
+}
+
+/* article css blog */
+article {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+/* a css */
+
+a {
+    cursor: pointer;
+    color: gray;
+}
+
+a.a-rgac-brand {
+    margin-top: -5px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+
+ul.awana-list li {
+    list-style-type: none;
+    font-size: 1.95em !important;
+    font-family: 'EB Garamond', serif;
+    letter-spacing: 2px;
+}
+
+a {
+  transition: 0.75s;
+}
+
+li.active a {
+    color: #333;
+    text-decoration: underline;
+}
+
+ul.awana-list li a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+/* span css */
+.nav-awana {
+    margin-right: 1%;
+}
+
+.nav-col {
+    margin-top: 10%;
+}
+
+.menu-item {
+  list-style-type: none;
+  text-align: left;
+  text-decoration: none;
+}
+
+.menu-item a {
+  color: white !important;
+}
+
+/* The Overlay (background) */
+.overlay .closebtn {
+    color: white;
+    margin-right: 7%;
+}
+
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgba(21,20,32,0.8);
+    /* Black w/opacity */
+    overflow-x: hidden;
+}
+
+
+/* Position the content inside the overlay */
+
+.overlay-content {
+    position: relative;
+    color: white;
+    top: 25%;
+    margin-left: 3% !important;
+    margin-right: 3% !important;
+    /* 25% from the top */
+    width: 100%;
+    /* 100% width */
+    text-align: left;
+    /* Centered text/links */
+    margin-top: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+
+/* The navigation links inside the overlay */
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.overlay a:hover, .overlay a:focus {
+    color: black;
+}
+
+
+/* Position the close button (top right corner) */
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+.star {
+    visibility: hidden;
+}
+
+.fadeIn {
+    -webkit-animation: animat_show 0.8s;
+    animation: animat_show 0.8s;
+    visibility: visible !important;
+}
+
+.carousel-control {
+  width: 6% !important;
+  opacity: .35 !important;
+}
+.carousel-fade {
+    .carousel-inner {
+        .item {
+            transition-property: opacity;
+        }
+
+        .item,
+        .active.left,
+        .active.right {
+            opacity: 0;
+        }
+
+        .active,
+        .next.left,
+        .prev.right {
+            opacity: 1;
+        }
+
+        .next,
+        .prev,
+        .active.left,
+        .active.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .carousel-control {
+        z-index: 2;
+    }
+}
+
+
+@-webkit-keyframes animat_show {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .container {
+        max-width: (1600px - @grid-gutter-width);
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .container {
+        max-width: (1900px - @grid-gutter-width);
+    }
+}

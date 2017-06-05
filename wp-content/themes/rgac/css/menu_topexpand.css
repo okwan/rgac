@@ -1,0 +1,103 @@
+html,
+body,
+.container,
+.content-wrap {
+	width: 100%;
+	height: 100%;
+}
+
+.menu-wrap a {
+	color: black;
+}
+
+.gg {
+	position:fixed;
+	padding: 0 0.2em;
+	padding-top: 2.5em;
+}
+
+.menu-wrap a:hover,
+.menu-wrap a:focus {
+	color: gray;
+}
+
+.content-wrap {
+	-webkit-transition: -webkit-transform 0.4s;
+	transition: transform 0.4s;
+	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+}
+
+.content {
+	position: relative;
+	background: white;
+	padding-bottom: 12em;
+}
+
+/* Common styles for menu button and menu-wrap */
+.menu-button,
+.menu-wrap {
+	position: fixed;
+	margin-top: -55px;
+	width: 2.25em;
+	height: 2em;
+	font-size: 1.30em;
+}
+
+/* Menu Button *
+/* Menu */
+.menu-wrap {
+	z-index: 999;
+	background: white;
+}
+
+.menu {
+	height: 100%;
+	font-size: 0.75em;
+}
+
+.icon-list {
+	float: right;
+}
+
+.icon-list a {
+	display: inline;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 1em;
+	font-weight: 700;
+}
+
+@media screen and (max-width: 50em) {
+	.icon-list a {
+		padding: 0.5em 0em;
+		margin: 0 5px;
+		font-size: 1em;
+	}
+	.icon-list a span {
+		display: none;
+	}
+}
+
+/* Shown menu */
+.show-menu .content-wrap {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+	-webkit-transform: translate3d(0px,250px,0);
+	transform: translate3d(0px,250px,0);
+}
+
+.show-menu .menu-wrap {
+	width: 100%;
+	height: 80px;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.show-menu .icon-list a {
+	opacity: 1;
+	-webkit-transition: opacity 0.6s 0.6s;
+	transition: opacity 0.6s 0.6s;
+}
