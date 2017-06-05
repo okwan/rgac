@@ -211,13 +211,9 @@ tr td:nth-child(2) {
         <br><br><p>Rundown of the night</p><br>
         <ul>
           <li>Opening ceremony</li>
-          <li>Puppet show</li>
-          <li>Craft time</li>
-          <li>Game time / Singing time</li>
-          <li>Story time</li>
-          <li>Snack time</li>
-          <li>Handbook time</li>
-          <li>Going home time</li>
+          <li>Trek Game time</li>
+          <li>Joint T&T Game time</li>
+          <li>Lesson time</li>
         </ul>
       </div>
     </div>
