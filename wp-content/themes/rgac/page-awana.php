@@ -176,7 +176,7 @@ tr td:nth-child(2) {
         </ul>
       </div>
       <div role ="tabpanel" class = "tab-pane fade" id ="sparkies">
-        <p>Sparkies</p><br>
+        <p>Sparks</p><br>
         <p>We're Sparks to light the world! Sparks inspires the delicate mind of early elementary-age children to learn more about God through playing games, memorizing bible verses, and gospel stories!</p>
         <br><br><p>Rundown of the night</p><br>
         <ul>
